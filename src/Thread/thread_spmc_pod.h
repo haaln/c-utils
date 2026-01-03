@@ -16,12 +16,14 @@
 
 #include <stdint.h>
 
+#include "stdbool.h"
+
 #if (__linux__)
 #include <pthread.h>
 #include <semaphore.h>
-using semaphore_t = sem_t;
-using thread_handle_t = pthread_t;
-using atomic_u32 = _Atomic uint32_t;
+typedef sem_t semaphore_t;
+typedef pthread_t thread_handle_t ;
+typedef _Atomic uint32_t atomic_u32 ;
 #else
 #include <semaphore> // C++20
 #include <threads.h>

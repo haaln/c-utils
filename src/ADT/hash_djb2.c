@@ -1,5 +1,6 @@
 #include "hash.h"
-#include <cassert>
+#include <assert.h>
+#include <stdbool.h>
 
 // TODO: custom allocator macro
 #ifndef UTIL_HASH_ALLOCATOR

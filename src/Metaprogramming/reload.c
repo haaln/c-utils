@@ -13,7 +13,6 @@
 #error "Unsupported platform"
 #endif
 
-extern "C" {
 
 #ifdef _WIN32
 typedef HMODULE lib_handle_t;
@@ -153,4 +152,3 @@ UNLOAD_LIBRARY(unload_library)
 
     return 0;
 }
-} // extern "C"

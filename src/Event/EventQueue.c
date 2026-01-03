@@ -37,7 +37,7 @@ Event *event_poll(EventList_t *list)
         return result;
     }
     event_clear(list);
-    return nullptr;
+    return NULL;
 }
 
 Event event_pop(EventList_t *list)
@@ -65,4 +65,4 @@ void event_debug_print(Event *event)
     }
 }
 
-#endif // CXX_CLASS_IMPL
+#endif

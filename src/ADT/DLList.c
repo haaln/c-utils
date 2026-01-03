@@ -1,6 +1,7 @@
 #include "DLList.h"
-#include "Core/ASSERT.h"
-#include "Core/Pool.h"
+#include "assert.h"
+#include "pool.h"
+#include <string.h>
 
 DLList *g_tail = NULL;
 DLList *g_root = NULL;
@@ -8,9 +9,9 @@ Pool *g_pool_allocator = NULL;
 
 DLList *dlist_init(Pool *pool_allocator)
 {
-    ASSERT(!"NOT IMPLEMENTED");
+    assert(!"NOT IMPLEMENTED");
 
-    return nullptr;
+    return NULL;
 }
 
 void dlist_reload(DLList *root, Pool *pool_allocator)
@@ -22,7 +23,7 @@ void dlist_reload(DLList *root, Pool *pool_allocator)
 DLList *dlist_create_node()
 {
     DLList *node = (DLList *)pool_alloc(g_pool_allocator);
-    ASSERT(node);
+    assert(node);
     if(!node) return NULL;
     return node;
 }

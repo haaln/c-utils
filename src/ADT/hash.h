@@ -1,7 +1,7 @@
 #ifndef UTIL_HASH
 #define UTIL_HASH
 
-#include "types.h"
+#include <stdint.h>
 
 #ifndef HASH_TABLE_SIZE
 #define HASH_TABLE_SIZE 256

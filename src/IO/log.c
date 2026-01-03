@@ -27,7 +27,6 @@
 #define BOLD  "\x1B[1m"
 #define ULINE "\x1B[4m"
 
-extern "C" {
 
 // TODO:: add functionality to be able to different outputs, stderr/files etc...
 
@@ -91,4 +90,3 @@ void __log_critical(const char *format, ...)
     return;
 }
 
-} // extern "C"

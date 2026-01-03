@@ -1,7 +1,6 @@
 #ifndef UTIL_LOG
 #define UTIL_LOG
 
-extern "C" {
 void __log_trace(const char *format, ...);
 void __log_debug(const char *format, ...);
 void __log_info(const char *format, ...);
@@ -9,7 +8,6 @@ void __log_warn(const char *format, ...);
 void __log_error(const char *format, ...);
 void __log_critical(const char *format, ...);
 
-} // extern "C"
 
 // Define a LOG_LEVEL inside a header somewhere in the project
 #ifndef NDEBUG
