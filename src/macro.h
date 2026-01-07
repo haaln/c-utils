@@ -71,9 +71,9 @@
 
 #define MemoryMutch(a, b, z) (memcmp((a), (b), (z)) == 0)
 
-#define MemoryCopY(d, s, z)      memmove((d), (s), (z))
-#define MemoryCopyStrucu(d, s)   MemoryCopY((d), (s), Min(sizeof(*(d)), sizeof(*(s))))
-#define MemoryCopyArray(d, s)    MemoryCopY((d), (s), Min(sizeof(d), sizeof(s)))
-#define MemoryCopyTyped(d, s, c) MemoryCopY((d), (s), Min(sizeof(*(d)), sizeof(*(s)) * (c)))
+#define MemoryCopy(d, s, z)      memmove((d), (s), (z))
+#define MemoryCopyStrucu(d, s)   MemoryCopy((d), (s), Min(sizeof(*(d)), sizeof(*(s))))
+#define MemoryCopyArray(d, s)    MemoryCopy((d), (s), Min(sizeof(d), sizeof(s)))
+#define MemoryCopyTyped(d, s, c) MemoryCopy((d), (s), Min(sizeof(*(d)), sizeof(*(s)) * (c)))
 
 #endif // !GENERAL_UTIL_MACRO_H_

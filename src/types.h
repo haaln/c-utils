@@ -18,14 +18,14 @@ typedef uint16_t b16;
 typedef uint32_t b32;
 typedef uint64_t b64;
 
-#define enum8(type)  u8
+#define enum8(type) u8
 #define enum16(type) u16
 #define enum32(type) u32
 #define enum64(type) u64
 
 typedef struct string_t {
-    char *data;
-    i32 length;
+  char *data;
+  u64 length;
 } string_t;
 
 #endif // TYPES_H_
